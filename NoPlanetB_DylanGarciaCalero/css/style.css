@@ -1,0 +1,790 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: poppinslight;
+    color: #423c52;
+}
+
+@font-face {
+    font-family: 'poppinslight_italic';
+    src: url('../font/poppins-lightitalic-webfont.woff2') format('woff2'),
+         url('../font/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../font/poppins-bold-webfont.woff2') format('woff2'),
+         url('../font/poppins-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../font/poppins-light-webfont.woff2') format('woff2'),
+         url('../font/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    width: 100%;
+    background-color: #423c52;
+    z-index: 999;
+}
+
+nav li{
+    list-style: none;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav--top span {
+    font-family: poppinsbold;
+    color: #04c4d9;
+
+}
+
+.nav--top {
+    display:flex;
+    margin: 0 1rem;
+}
+
+.nav--top .logo{
+    max-width: 5rem;
+    min-width: 5rem;
+    padding: 0.5rem;
+}
+
+.nav--top h1 {
+    font-family: poppinsbold;
+    color:white;
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+}
+
+.nav--bot {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.nav--bot li {
+    min-width: 3rem;
+    margin: 0.5rem;
+}
+
+.nav--bot li:hover {
+    opacity: 50%;
+}
+
+.nav--bot .takeAction {
+    text-align: center;
+    border: solid white 0.1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.nav--bot .takeAction:hover{
+    background-color: #04C4D9;
+}
+
+.nav--bot .takeAction:hover > a {
+    color:black;
+}
+
+.header__ijsbeer {
+    background-color: #04C4D9;
+    height: 23.5rem;
+    width: 100vw;
+    position: relative;
+}
+
+.header__ijsbeer svg {
+    height: 22rem;
+    width: 30rem;
+    position: absolute;
+    bottom: -9rem;
+    left: -20rem;
+    background-color: #04C4D9;
+}
+
+.header__ijsbeer h2 {
+    position: absolute;
+    top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+.header__ijsbeer h1 {
+    position: absolute;
+    top: 3rem;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    font-family: poppinsbold;
+}
+
+.main__fietser {
+    background-color: #ddd;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    padding-bottom: 3rem;
+    font-family: poppinsbold;
+}
+.main__quote {
+    background-color: #fe552f;
+    height: auto;
+    padding-top: 5rem;
+    width: 100vw;
+}
+
+.flexQuote--steven{
+    display: flex;
+}
+
+.flexQuote--steven img {
+    min-width: 5rem;
+    border-radius: 50%;
+    border: solid white 0.3rem;
+    max-width: 13rem;
+    padding: 0.4rem;
+    margin: 1rem;
+}
+
+.flexQuote--steven p {
+    width: 50vw;
+    margin: 1rem;
+    padding-top: 5rem;
+    color: white;
+}
+
+.main__quote h1 {
+    font-family: poppinsbold;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.main__quote h2 {
+    font-size: 1rem;
+    padding-top: 3rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+.flexQuote__box {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2rem;
+}
+
+.flexQuote__outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexQuote__box figure {
+    background-color: white;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    left: 5rem;
+    top: 0;
+    transform: rotate(45deg);
+    margin-top: 1rem;
+}
+
+.flexQuote__box p {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+
+}
+
+.flexFietser--main svg{
+    height: 24rem;
+    max-width: 90vw;
+    padding-left: 5vw;
+    position: absolute;
+    top: 8rem;
+    padding-top: 2rem;
+}
+
+.main__fietser h1 {
+    text-align: center;
+    padding: 2rem 1rem 0 1rem;
+    font-family: poppinsbold;
+}
+
+.main__fietser p {
+    text-align: center;
+    padding: 0 10vw;
+    margin: auto;
+}
+
+.flexFietser--main {
+    display: flex;
+    padding-top: 28rem;
+    background-color: #ddd;
+}
+
+.flexFietser--main h2 {
+    padding-left: 2rem;
+    text-decoration: underline;
+}
+
+.flexFietser--sub p {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.flexFietser--sub h2 {
+    padding-bottom: 1rem;
+}
+
+.main__blog {
+    width: 100vw;
+    background-color: #ddd;
+}
+
+.main__blog h1 {
+    padding: 2rem 1rem;
+    font-family: poppinsbold;
+}
+
+.main__blog h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    margin-left: 1rem;
+}
+
+.flexBlog__outer {
+    padding: 0 1rem;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBlog__outer img {
+    width: 100%;
+}
+
+.flexBlog__outer .flexBlog__timestamp {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-family: poppinslight_italic;
+}
+
+.flexBlog__outer article {
+    background-color: white;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 5px;
+}
+
+.flexBlog__info{
+    padding: 0 1rem;
+}
+
+.flexBlog__readmore {
+    padding: 1.5rem 1rem;
+}
+
+.flexBlog__timestamp{
+    width: 7.5rem;
+    text-align: left;
+    background-color: #ddd;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.flexBlog__timestamp svg {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.flexBlog__readmore svg {
+    width: 0.8rem;
+    height: 0.8rem;
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    fill:  #423c52;
+}
+
+.flexBlog__new {
+    position: relative;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+.flexBlog__new p {
+    position: absolute;
+    right: 1rem;
+    bottom: -0.5rem;
+    font-size: 1.5rem;
+    background-color:#fe552f;
+    padding: 0.5rem;
+}
+
+.main__atmosphere {
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+.flexAtmosphere {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexAtmosphere p {
+    padding-bottom: 1rem;
+}
+
+.main__atmosphere h1{
+    padding: 2rem 0;
+    font-family: poppinsbold;
+}
+
+.flexAnimation__earth {
+    background-image: url(../images/climate-change-optimised.svg);
+    background-repeat: no-repeat;
+    background-position: 59% 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    max-width: 30rem;
+    margin: auto;
+    padding: 5rem 0;
+    margin-top: 6rem;
+}
+
+.flexfooter__socials {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+.flexFooter svg {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.1rem;
+    fill: white;
+}
+
+.footer__copyright {
+    background-color: black;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer__copyright p {
+    color: white;
+}
+
+footer {
+    background-color: #423c52;
+}
+
+.flexAnimation__earth .svg--moon {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    bottom: 4.5rem;
+
+    -webkit-animation: RotatieEarth 4s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: RotatieEarth 4s linear infinite; /* Firefox 5-15 */
+    -o-animation: RotatieEarth 4s linear infinite; /* Opera 12+ */
+    animation: RotatieEarth 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+}
+
+.flexBlog__readmore:hover > svg{
+    padding-left: 2rem;
+  }
+
+@keyframes RotatieEarth {
+    from { transform: rotate(0deg) translateX(6rem) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(6rem) rotate(-360deg); }
+}
+
+.flexFooter {
+    background-color: #423c52;
+    color: white;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexFooter li {
+    list-style: none;
+    font-size: 0.9rem;
+    padding-bottom: 0.15rem;
+    color: white;
+}
+
+.flexFooter p {
+    font-size: 0.9rem;
+    max-width: 50%;
+    color: white;
+}
+
+.flexFooter h2 {
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: poppinsbold;
+    color: white;
+}
+
+
+@media(min-width: 21.5625rem){
+    .header__ijsbeer {
+        height: 20rem;
+    }
+}
+	
+@media(min-width: 32rem) {
+
+    nav {
+        position: fixed;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .nav--bot li {
+        text-align: center;
+        align-self: center;
+    }
+      
+    .nav--bot {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav--bot li:hover {
+        border-bottom: solid 0.2rem white;
+    }
+
+    .nav--bot .takeAction {
+        height: 1.5rem;
+        padding-top: 0.9rem;
+    }
+
+    .nav--bot .takeAction:hover{
+        background-color: #04C4D9;
+        border: solid 0.1rem white;
+    }
+    
+    .nav--bot .takeAction:hover > a {
+        color:black;
+    }
+
+    .main__fietser p {
+        max-width: 20rem;
+    }
+
+    .flexFietser--main {
+        padding-top: 2rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .flexFietser--main svg{
+        max-width: 50vw;
+        top: 0;
+        padding-top: 0;
+        padding: 0 1rem;
+        position: relative;
+    }
+    
+    .flexFietser--sub {
+        max-width: 50vw;
+        padding-right: 1rem;
+    }
+
+    .flexFietser--sub h2{
+        padding: 2rem 0;
+    }
+
+    .flexFietser--sub p{
+        width: 50vw;
+        padding: 0 0;
+        max-width: 40rem;
+        padding-bottom: 1rem;
+    }
+
+    .main__quote h1 {
+        font-size: 4rem;
+    }
+
+    .main__quote h2 {
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main__quote p {
+        font-size: 1.5rem;
+    }
+
+    .flexQuote__box {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 2rem;
+    }
+    
+    .flexQuote__outer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flexQuote__box figure {
+        background-color: white;
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        left: 7rem;
+        top: 0;
+        transform: rotate(45deg);
+        margin-top: 1rem;
+    }
+
+    .flexFooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flexFooter section {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+
+    .witruimte {
+        height: 11rem;
+    }
+}
+
+@media(min-width: 50rem) {
+
+    .main__fietser h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .main__fietser h2 {
+        font-size: 2rem;
+    }
+
+    .main__fietser p {
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .main__fietser{
+        padding: 2rem 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav--bot {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav--bot li{
+        padding: 2rem 0;
+    }
+
+    .nav--bot .takeAction:hover{
+        background-color: #04C4D9;
+        border: solid 0.1rem white;
+    }
+    
+    .nav--bot .takeAction:hover > a {
+        color:black;
+    }
+    
+    .header__ijsbeer {
+        background-color: #04C4D9;
+        height: 40rem;
+        width: 100vw;
+        position: relative;
+    }
+    
+    .header__ijsbeer svg {
+        height: 40rem;
+        width: 70rem;
+        position: absolute;
+        bottom: -5rem;
+        background-color: #04C4D9;
+        right: 33rem;
+        left: auto;
+    }
+    
+    .header__ijsbeer h2 {
+        left: 55vw;
+        top: 14rem;
+        font-size: 2rem;
+        z-index: 99;
+    }
+    
+    .header__ijsbeer h1 {
+        top: 16.5rem;
+        left: 55vw;
+        font-size: 4rem;
+        z-index: 99;
+    }
+
+    .flexFietser--main {
+        max-width: 85rem;
+        margin: auto;
+    }
+
+    .flexFietser--main svg {
+        padding-right: 2rem;
+    }
+
+    .main__quote h1 {
+        padding-left: 2rem;
+    }
+
+    .flexQuote--steven {
+        flex-direction: column;
+    }
+
+    .flexQuote--steven img {
+        width: 7rem;
+    }
+
+    .flexQuote--steven h2 {
+        width: 1rem;
+        padding-top: 1rem;
+    }
+
+    .flexQuote__outer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flexQuote__box figure {
+        top: 3rem;
+        left: 1rem;
+    }
+
+    .flexBlog__outer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .flexBlog__outer article {
+        width: 49%;
+    }
+
+    .main__atmosphere {
+        background-color: #ddd;
+        padding: 1rem;
+    }
+
+    .main__atmosphere h1 {
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    .flexAtmosphere {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 60rem;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .flexAtmosphere p {
+        width: 49%;
+    }
+
+    .flexFooter {
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    .flexFooter section {
+        width: 25%;
+    }
+
+    .witruimte {
+        height: 6.9rem;
+    }
+
+    .wiggle:hover {
+            animation: swing 5s infinite ease-in-out;
+          }
+    
+    @keyframes swing {
+        0%, 100% { transform: rotate(-5deg); }
+        50% { transform: rotate(7deg); }
+      }
+}
+
+@media(min-width: 80rem) {
+
+    .main__blog h1 {
+        max-width: 70rem;
+        margin:auto;
+    }
+
+    .flexBlog__outer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    .flexBlog__outer article {
+        width: 33%;
+    }
+    
+    .flexBlog__readmore a {
+        align-content: flex-end;
+    }
+
+    .header__ijsbeer svg {
+        right: 38%;
+    }
+
+    .flexQuote__outer {
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    .main__quote h1 {
+        max-width: 50rem;
+        margin: auto;
+    }
+}
